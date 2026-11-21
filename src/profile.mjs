@@ -24,7 +24,7 @@ export const META = (path, title = 'South Beacon') => `<meta property="og:type" 
 <meta name="twitter:image" content="${ORIGIN}/assets/share/card-1200x630.jpg">
 <link rel="canonical" href="${ORIGIN}/${path}">`;
 
-// Content: Dinis's verbatim text, with the softer products line until he chooses.
+// Content: Dinis's text, softened after security.b's review 025.
 const C = {
   code: 'South Beacon',
   headline: 'Senior Technology &amp; Risk Leader',
@@ -48,8 +48,8 @@ const DESIGNS = [
   ['designs/scorecard/', 'The Scorecard'], ['designs/letter/', 'The Letter'],
 ];
 
-// The Letter: the same facts as the profile, in the candidate's voice (Dinis, 21 November 2026: "you can write it
-// what you think is his voice"). Nothing here that the profile text does not already say.
+// The Letter: the same facts as the profile, in the candidate's voice (Dinis's choice, 21 November 2026).
+// Nothing here that the profile text does not already say.
 const LETTER = `<p>To the hiring board,</p>
 <p>I am a senior technology and security leader with more than 20 years' experience across enterprise platforms, digital services, cloud and operational technology. I began in critical-infrastructure consulting, and went on to lead security engineering, architecture and platform delivery in a large enterprise. I bring hands-on engineering experience together with executive advice on technology risk, investment and incident response.</p>
 <p>A few things I have done:</p>
