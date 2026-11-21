@@ -13,8 +13,11 @@ a{color:var(--accent)}
 table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:.4rem;border-bottom:1px solid var(--line);vertical-align:top}
 .form-slot{border:1px dashed var(--line);padding:1rem;border-radius:6px}
 .skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--bg);padding:.4rem}
-.chooser{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;font-size:.85rem;padding:.6rem 0;border-bottom:1px solid var(--line)}
-.chooser ul{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:0}.chooser [aria-current]{font-weight:700}
+.chooser{font-size:.85rem;padding:.5rem 0;border-bottom:1px solid var(--line);margin-right:9rem}
+.chooser summary{cursor:pointer;min-height:24px;color:var(--accent);font-weight:600}.chooser .now{font-weight:400;color:var(--fg)}
+.chooser ul{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem .9rem;padding:.5rem 0 0;margin:0}.chooser [aria-current]{font-weight:700}
+.site-links{display:flex;flex-wrap:wrap;gap:.2rem .3rem}
+.designs-list{list-style:none;padding:0;display:grid;gap:1rem}.designs-list li{border:1px solid var(--line);border-radius:6px;padding:1rem}
 footer{max-width:64rem;margin:2rem auto;font-size:.85rem;border-top:1px solid var(--line);padding-top:1rem}.draft{font-weight:600}
 /* The Brief */
 .boxed{display:inline-block;border:1px solid currentColor;padding:.1rem .5rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
@@ -36,7 +39,7 @@ footer{max-width:64rem;margin:2rem auto;font-size:.85rem;border-top:1px solid va
 .cards{display:grid;gap:1.2rem;margin-top:1.5rem}.card{background:var(--bg);border:1px solid var(--line);border-top:6px solid var(--amber);padding:1rem 1.2rem;border-radius:4px}
 /* The Scorecard */
 .tiles{list-style:none;padding:0;display:grid;gap:1rem}@media (min-width:44rem){.tiles{grid-template-columns:repeat(2,1fr)}}
-.tiles li{border:1px solid var(--line);border-radius:6px;padding:1rem}.fit{list-style:none;padding:0}.fit li{padding:.3rem 0}.hint{font-size:.9rem}
+.tiles li{border:1px solid var(--line);border-radius:6px;padding:1rem}.fit{list-style:none;padding:0}.fit li{padding:.3rem 0;display:flex;gap:.6rem;align-items:flex-start}.fit input{width:24px;height:24px;flex:none;margin:0}.hint{font-size:.9rem}
 /* The Letter */
 .letter{max-width:40rem;margin:0 auto;font-family:Georgia,"Times New Roman",serif;font-size:1.08rem}
 .sign{font-style:italic;font-size:1.4rem;color:var(--accent)}
