@@ -95,7 +95,7 @@ ${FAMILY}
 <main id="main">
 ${body}
 </main>
-<footer><nav class="site-links" aria-label="About this site"><a href="/start/">Start here</a><span aria-hidden="true"> · </span><a href="/agents/">Use with your AI</a><span aria-hidden="true"> · </span><a href="/admin/">How this site was made</a><span aria-hidden="true"> · </span><a href="${up}designs/">All designs</a></nav></footer>
+<footer><nav class="site-links" aria-label="About this site"><a href="/start/">Start here</a><span aria-hidden="true"> · </span><a href="/agents/">Use with your AI</a><span aria-hidden="true"> · </span><a href="/admin/">How this site was made</a><span aria-hidden="true"> · </span><a href="/policy/">Agent policy</a><span aria-hidden="true"> · </span><a href="${up}designs/">All designs</a></nav></footer>
 </body>
 </html>
 `;
