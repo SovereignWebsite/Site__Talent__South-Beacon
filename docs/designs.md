@@ -18,3 +18,7 @@ An anonymised talent profile. The code name is the brand; there is no photo, nam
 5. The Letter: the same text set as a letter to the hiring board, signed South Beacon.
 
 All five carry the same words. The wording was softened after security.b's re-identification review (025) and approved by Dinis on 21 November 2026.
+
+## Approvals
+
+- 21 November 2026: Dinis Cruz, the talent agent, confirmed that the candidate has approved the page. security.b's re-identification review 025 closed with a pass the same day.
