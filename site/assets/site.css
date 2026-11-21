@@ -1,0 +1,63 @@
+:root{--ink:#0E1A24;--paper:#F5F3EE;--amber:#E0A040;--amber-text:#865710;--line:#d8d3c8;--bg:var(--paper);--fg:var(--ink);--accent:var(--amber-text)}
+@media (prefers-color-scheme:dark){:root{--bg:var(--ink);--fg:var(--paper);--accent:var(--amber);--line:#2c3a46}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:0 16px}
+main{max-width:64rem;margin:0 auto;padding:1.5rem 0}
+h1,h2,h3,.wordmark,.stencil{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+.wordmark{font-size:2.2rem;letter-spacing:.04em;margin:.2rem 0;color:var(--accent)}
+.label{font-style:italic;opacity:.85}
+.specs{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}.specs li{border:1px solid var(--line);border-radius:99px;padding:.1rem .7rem;font-size:.9rem}
+.cta{display:inline-block;background:var(--amber);color:var(--ink);font-weight:600;padding:.7rem 1.2rem;border-radius:6px;text-decoration:none;margin:.5rem 0}
+.cta:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:.4rem;border-bottom:1px solid var(--line);vertical-align:top}
+.form-slot{border:1px dashed var(--line);padding:1rem;border-radius:6px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--bg);padding:.4rem}
+.chooser{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;font-size:.85rem;padding:.6rem 0;border-bottom:1px solid var(--line)}
+.chooser ul{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:0}.chooser [aria-current]{font-weight:700}
+footer{max-width:64rem;margin:2rem auto;font-size:.85rem;border-top:1px solid var(--line);padding-top:1rem}.draft{font-weight:600}
+/* The Brief */
+.boxed{display:inline-block;border:1px solid currentColor;padding:.1rem .5rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
+@media (min-width:52rem){.brief{display:grid;grid-template-columns:40% 1fr;gap:2.5rem}.brief-left{position:sticky;top:1rem;align-self:start}}
+@media print{.chooser,.cta,.form-slot,footer .draft{display:none}body{font-size:10pt}}
+/* The Beacon */
+.d-beacon{--bg:var(--ink);--fg:var(--paper);--accent:var(--amber);--line:#2c3a46;--family-fg:#c9c9c9;--family-fg-strong:#fff;--family-bg:#1c2731}
+.beacon{width:12rem;max-width:100%;height:auto}.beacon .tower{fill:currentColor;opacity:.8}.beacon .lamp{fill:var(--amber)}
+.beacon .sweep path{fill:var(--amber);opacity:.35;transform-origin:60px 40px;animation:sweep 6s ease-in-out infinite alternate}
+@keyframes sweep{from{transform:scaleX(.3)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.beacon .sweep path{animation:none}}
+.hero{text-align:center;padding:2rem 0}.hero .specs{justify-content:center}
+.signals{list-style:none;padding:0;display:grid;gap:1rem}@media (min-width:52rem){.signals{grid-template-columns:repeat(2,1fr)}}
+.signals li{border-left:3px solid var(--amber);padding-left:1rem}.sig{font-family:Georgia,serif;color:var(--amber)}
+/* The Dossier */
+.d-dossier .cover{background:#d9c49a;color:var(--ink);padding:3rem 1rem;text-align:center;border-radius:4px}
+.d-dossier .cover a{color:var(--ink)}
+.stencil{font-size:2.4rem;letter-spacing:.2em;text-transform:uppercase;margin:0}
+.cards{display:grid;gap:1.2rem;margin-top:1.5rem}.card{background:var(--bg);border:1px solid var(--line);border-top:6px solid var(--amber);padding:1rem 1.2rem;border-radius:4px}
+/* The Scorecard */
+.tiles{list-style:none;padding:0;display:grid;gap:1rem}@media (min-width:44rem){.tiles{grid-template-columns:repeat(2,1fr)}}
+.tiles li{border:1px solid var(--line);border-radius:6px;padding:1rem}.fit{list-style:none;padding:0}.fit li{padding:.3rem 0}.hint{font-size:.9rem}
+/* The Letter */
+.letter{max-width:40rem;margin:0 auto;font-family:Georgia,"Times New Roman",serif;font-size:1.08rem}
+.sign{font-style:italic;font-size:1.4rem;color:var(--accent)}
+.d-letter .intro{max-width:40rem;margin:2rem auto 0}
+/* The Sovereign Website credit on a customer's site: one small, muted control at the far top right that opens a
+   pop-up menu of the family links. Not a strip and not a menu bar: the site is about its owner (Dinis, 20 November
+   2026: "It needs to fundamentally be about the site and who is it about ... top right pop-up menu").
+   CSS only (details/summary), so no script and no CSP issue. It sits in the page's corner, above the owner's header;
+   a site whose own header uses that corner moves it with --family-top / --family-right.
+   To remove it, the owner sets one attribute: <html data-family-credit="off">. */
+.family-credit{--fam-fg:var(--family-fg,#5a5a5a);--fam-strong:var(--family-fg-strong,#111);--fam-bg:var(--family-bg,#fff);
+  position:absolute;top:var(--family-top,.4rem);right:var(--family-right,.75rem);z-index:50;font-size:.75rem;line-height:1.4}
+@media (prefers-color-scheme:dark){.family-credit{--fam-fg:var(--family-fg,#b5b5b5);--fam-strong:var(--family-fg-strong,#fff);--fam-bg:var(--family-bg,#1c1c1c)}}
+.family-credit summary{display:inline-flex;align-items:center;gap:.3rem;cursor:pointer;color:var(--fam-fg);list-style:none;min-height:24px;padding:.15rem .3rem;border-radius:4px}
+.family-credit summary::-webkit-details-marker{display:none}
+.family-credit summary::after{content:"";width:.35rem;height:.35rem;border:solid currentColor;border-width:0 1px 1px 0;transform:rotate(45deg) translateY(-2px)}
+.family-credit summary:hover,.family-credit summary:focus-visible,.family-credit[open] summary{color:var(--fam-strong)}
+.family-credit ul{position:absolute;right:0;top:100%;margin:.25rem 0 0;padding:.35rem 0;list-style:none;min-width:11rem;
+  background:var(--fam-bg);border:1px solid rgba(127,127,127,.3);border-radius:6px;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.family-credit a{display:block;padding:.3rem .8rem;min-height:24px;color:var(--fam-fg);text-decoration:none}
+.family-credit a:hover,.family-credit a:focus-visible{color:var(--fam-strong);background:rgba(127,127,127,.1)}
+.family-credit .family-gap{border-bottom:1px solid rgba(127,127,127,.25);padding-bottom:.3rem;margin-bottom:.3rem}
+[data-family-credit="off"] .family-credit{display:none}
+@media print{.family-credit{display:none}}

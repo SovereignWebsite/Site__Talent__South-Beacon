@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://dev.send.sgraph.ai; script-src 'self'; style-src 'unsafe-inline'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Request an introduction</title>
+<meta name="description" content="Request an introduction to South Beacon, through the talent agent.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="South Beacon">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://south-beacon.talent.sovereignweb.site/introduction/">
+<meta property="og:title" content="Request an introduction: South Beacon">
+<meta property="og:description" content="An anonymised profile of a senior technology and security leader. Introductions through the talent agent.">
+<meta property="og:image" content="https://south-beacon.talent.sovereignweb.site/assets/share/card-1200x630.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="South Beacon">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Request an introduction: South Beacon">
+<meta name="twitter:description" content="An anonymised profile of a senior technology and security leader. Introductions through the talent agent.">
+<meta name="twitter:image" content="https://south-beacon.talent.sovereignweb.site/assets/share/card-1200x630.jpg">
+<link rel="canonical" href="https://south-beacon.talent.sovereignweb.site/introduction/">
+<style>
+  :root {
+    --bg: #f6f5f2; --card: #ffffff; --ink: #1d1f24; --muted: #5d626c; --line: #dcd9d2;
+    --accent: #2f5d8a; --accent-ink: #ffffff; --ok: #2e7d4f; --bad: #a33b2b;
+    --text: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --mono: ui-monospace, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #15171b; --card: #1e2126; --ink: #e9e7e2; --muted: #a2a7b0; --line: #343840;
+            --accent: #7fb0e0; --accent-ink: #10161d; --ok: #6cc38f; --bad: #e88b7c; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--text);
+         padding-block: 32px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  main { max-width: 34rem; margin: 0 auto; display: grid; gap: 16px; }
+  h1 { font-size: 1.4rem; margin: 0; text-wrap: balance; } h2 { font-size: 1.05rem; margin: 8px 0 0; }
+  p { margin: 0; } .muted { color: var(--muted); font-size: .92rem; } code { font-family: var(--mono); font-size: .88em; }
+  label { font-weight: 600; display: block; margin-bottom: 4px; } .opt { font-weight: 400; color: var(--muted); }
+  input, textarea { width: 100%; padding: 10px 12px; font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  textarea { min-height: 8rem; resize: vertical; }
+  input:focus-visible, textarea:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  button { font: inherit; font-weight: 600; padding: 10px 20px; border-radius: 8px; border: 0; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+  button.quiet { background: transparent; color: var(--muted); border: 1px solid var(--line); font-weight: 500; padding: 6px 12px; }
+  button[disabled] { opacity: .6; cursor: default; }
+  #status { min-height: 1.5em; } #status.ok { color: var(--ok); } #status.bad { color: var(--bad); }
+  .done { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--ok); border-radius: 8px; padding: 14px 16px; display: grid; gap: 8px; }
+  #sent { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  #sent li { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 4px; min-width: 0; overflow-wrap: anywhere; }
+  .when { color: var(--muted); font-size: .85rem; font-variant-numeric: tabular-nums; }
+  .state { font-weight: 600; } .s-received, .s-answered, .s-acted-on { color: var(--ok); }
+  .stack { display: grid; gap: 14px; } [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Request an introduction</h1>
+  <p>Tell us who you are and about the role. The candidate's agent reads every request and passes it to the candidate. Introductions are made only with the candidate's agreement.</p>
+  <section id="form" class="stack">
+    <div><label for="name">Your name</label><input id="name" maxlength="120" autocomplete="name"></div>
+    <div><label for="org">Organisation</label><input id="org" maxlength="160" autocomplete="organization"></div>
+    <div><label for="contact">How to reach you</label><input id="contact" maxlength="200" placeholder="Email, phone or profile link"></div>
+    <div><label for="role">The role</label><input id="role" maxlength="200" placeholder="Title, and a link if there is one"></div>
+    <div><label for="text">Message <span class="opt">(optional)</span></label><textarea id="text" maxlength="4000" placeholder="Why this role fits, location, timing"></textarea></div>
+    <div class="row"><button id="send" type="button">Send request</button><span id="status" role="status"></span></div>
+    <p class="muted">Your request is encrypted on this device before it leaves, so only the candidate's agent can read it. This device keeps its own key (<code id="device"></code>) and a list of what it has sent, so you can see when a request has been received. No cookies. Up to <span id="cap">3</span> requests a day from one device.</p>
+  </section>
+  <section id="thanks" class="done" hidden tabindex="-1" aria-live="polite">
+    <strong>Thank you. Your request has been sent.</strong>
+    <p>The candidate's agent reads requests every hour from 10:00 to 22:00 UK time and passes them on. If the candidate would like an introduction, you will be contacted by the route you gave. Introductions are made only with the candidate's agreement, so you may not hear back.</p>
+    <div><button id="another" class="quiet" type="button">Send another request</button></div>
+  </section>
+  <section id="history" class="stack" hidden>
+    <h2>Sent from this device</h2>
+    <ol id="sent"></ol>
+    <div><button id="forget" class="quiet" type="button">Forget this device</button></div>
+  </section>
+</main>
+<script src="intro.js"></script>
+</body>
+</html>
