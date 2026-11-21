@@ -48,6 +48,22 @@ const DESIGNS = [
   ['designs/scorecard/', 'The Scorecard'], ['designs/letter/', 'The Letter'],
 ];
 
+// The Letter: the same facts as the profile, in the candidate's voice (Dinis, 21 November 2026: "you can write it
+// what you think is his voice"). Nothing here that the profile text does not already say.
+const LETTER = `<p>To the hiring board,</p>
+<p>I am a senior technology and security leader with more than 20 years' experience across enterprise platforms, digital services, cloud and operational technology. I began in critical-infrastructure consulting, and went on to lead security engineering, architecture and platform delivery in a large enterprise. I bring hands-on engineering experience together with executive advice on technology risk, investment and incident response.</p>
+<p>A few things I have done:</p>
+<ul class="ach">
+<li>I led client engagements in security architecture and operations, then expanded an enterprise security architecture team and established secure-development governance. I line-managed senior specialists and helped grow a security function.</li>
+<li>I led internal security tooling for incident response and risk management.</li>
+<li>I directed security monitoring and vulnerability management in industrial environments, and introduced secure-development and cloud security controls across a substantial software estate.</li>
+<li>I advised industrial clients on control-system risk and operational resilience, and led technical analysis and response during security incidents.</li>
+<li>I guided senior clients through IT and OT transformation decisions and advised enterprise security executives on material risks and investment priorities. I led the technical evaluation for a major security investment, and managed security supplier relationships, non-staff budgets and forecasts.</li>
+</ul>
+<p>I am looking for a new role. If you have one in mind, my agent can introduce us, with my agreement.</p>
+<p>Yours,</p>
+<p class="sign">South Beacon</p>`;
+
 const BEACON_SVG = (cls = '') => `<svg class="beacon ${cls}" viewBox="0 0 120 160" aria-hidden="true" focusable="false">
 <g class="sweep"><path d="M60 40 L0 10 L0 70 Z" /><path d="M60 40 L120 10 L120 70 Z" /></g>
 <rect x="48" y="30" width="24" height="20" rx="3" class="lamp"/><path d="M44 52 h32 l-6 96 h-20 Z" class="tower"/><rect x="36" y="146" width="48" height="8" class="tower"/></svg>`;
@@ -115,8 +131,7 @@ ${intro()}`,
 
   // Framed from Dinis's verbatim text only, no added claims. Needs Dinis's approval before it goes live.
   'The Letter': () => `<article class="letter"><p class="wordmark">${C.code}</p><h1>${C.headline}</h1><p class="label">${C.label}</p>${CTA()}
-<p>To the hiring board,</p><p>${C.summary}</p><p>${C.achTitle}:</p>${achList(false)}${looking()}
-<p class="sign">South Beacon</p></article>${intro()}`,
+${LETTER}</article>${intro()}`,
 };
 
 const CSS = `:root{--ink:#0E1A24;--paper:#F5F3EE;--amber:#E0A040;--amber-text:#865710;--line:#d8d3c8;--bg:var(--paper);--fg:var(--ink);--accent:var(--amber-text)}
@@ -178,7 +193,7 @@ for (const [p, n] of DESIGNS) {
   writeFileSync(join(dir, 'index.html'), page(p, n, bodies[n](), cls));
 }
 {
-  const blurbs = { 'The Brief': 'A confidential one-page brief. Prints to one page.', 'The Beacon': 'Dark, with the beacon at the centre.', 'The Dossier': 'A plain folder of index cards, with what is withheld blacked out.', 'The Scorecard': 'Capabilities, outcomes and a fit checklist.', 'The Letter': 'The same profile, set as a letter.' };
+  const blurbs = { 'The Brief': 'A confidential one-page brief. Prints to one page.', 'The Beacon': 'Dark, with the beacon at the centre.', 'The Dossier': 'A plain folder of index cards, with what is withheld blacked out.', 'The Scorecard': 'Capabilities, outcomes and a fit checklist.', 'The Letter': 'The same profile, as a letter in the candidate\'s voice.' };
   const list = DESIGNS.map(([p, n]) => `<li><h2><a href="../${p}">${n}</a></h2><p>${blurbs[n]}</p></li>`).join('');
   writeFileSync(join(OUT, 'designs/index.html'), page('designs/', 'All designs', `<p class="wordmark">${C.code}</p><h1>The five designs</h1><p>The same profile, in five designs. Every design carries the same words.</p><ul class="designs-list">${list}</ul>`, 'd-index'));
 }

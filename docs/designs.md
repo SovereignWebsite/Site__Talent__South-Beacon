@@ -15,7 +15,7 @@ An anonymised talent profile. The code name is the brand; there is no photo, nam
 2. The Beacon: dark, a beacon with a soft sweep (still under reduced motion), achievements as signals.
 3. The Dossier: a plain folder cover with the code name, the profile on index cards.
 4. The Scorecard: capabilities as chips, achievements as tiles, a fit checklist that stays in the browser.
-5. The Letter: the same text set as a letter to the hiring board, signed South Beacon.
+5. The Letter: the same facts as a first-person letter to the hiring board, signed South Beacon (Dinis, 21 November 2026: "you can write it what you think is his voice"). It adds nothing the profile does not say.
 
 All five carry the same words. The wording was softened after security.b's re-identification review (025) and approved by Dinis on 21 November 2026.
 
