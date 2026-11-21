@@ -67,7 +67,7 @@
     <div><label for="role">The role</label><input id="role" maxlength="200" placeholder="Title, and a link if there is one"></div>
     <div><label for="text">Message <span class="opt">(optional)</span></label><textarea id="text" maxlength="4000" placeholder="Why this role fits, location, timing"></textarea></div>
     <div class="row"><button id="send" type="button">Send request</button><span id="status" role="status"></span></div>
-    <p class="muted">Your request is encrypted on this device before it leaves, so only the candidate's agent can read it. This device keeps its own key (<code id="device"></code>) and a list of what it has sent, so you can see when a request has been received. No cookies. Up to <span id="cap">3</span> requests a day from one device.</p>
+    <p class="muted">Your request is encrypted on this device before it leaves, so only the candidate's agent can read it. This device keeps its own key (<code id="device"></code>) and a short list of what it has sent (the role and organisation), so you can see when a request has been received; "Forget this device" removes both. No cookies. Up to <span id="cap">3</span> requests a day from one device.</p>
   </section>
   <section id="thanks" class="done" hidden tabindex="-1" aria-live="polite">
     <strong>Thank you. Your request has been sent.</strong>
