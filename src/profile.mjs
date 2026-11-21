@@ -150,7 +150,7 @@ table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:.4rem;bo
 .form-slot{border:1px dashed var(--line);padding:1rem;border-radius:6px}
 .skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--bg);padding:.4rem}
 .chooser{font-size:.85rem;padding:.5rem 0;border-bottom:1px solid var(--line);margin-right:9rem}
-.chooser summary{cursor:pointer;min-height:24px;color:var(--accent);font-weight:600}.chooser .now{font-weight:400;color:var(--fg)}
+.chooser summary{cursor:pointer;min-height:24px;color:var(--accent);font-weight:600}.chooser .now{font-weight:400;color:var(--fg)}@media (max-width:30rem){.chooser .now{display:none}}
 .chooser ul{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem .9rem;padding:.5rem 0 0;margin:0}.chooser [aria-current]{font-weight:700}
 .site-links{display:flex;flex-wrap:wrap;gap:.2rem .3rem}
 .designs-list{list-style:none;padding:0;display:grid;gap:1rem}.designs-list li{border:1px solid var(--line);border-radius:6px;padding:1rem}
