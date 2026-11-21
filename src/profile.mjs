@@ -99,7 +99,9 @@ ${looking()}${intro()}${CTA()}`,
 
   'The Dossier': () => `<header class="cover"><p class="stencil">${C.code}</p><p class="label">${C.label}</p><a class="open" href="#cards">Open the file</a><br>${CTA()}</header>
 <div id="cards" class="cards">
-<section class="card"><h1>${C.headline}</h1>${specs()}<p>${C.summary}</p>${CTA()}</section>
+<section class="card"><h1>${C.headline}</h1>
+<dl class="withheld">${['Name', 'Employers', 'Clients', 'Dates', 'Location'].map((k) => `<div><dt>${k}</dt><dd><span class="bar" aria-hidden="true"></span> <span class="w">(withheld)</span></dd></div>`).join('')}</dl>
+${specs()}<p>${C.summary}</p>${CTA()}</section>
 <section class="card"><h2>${C.achTitle}</h2>${achList(true)}</section>
 <section class="card">${looking()}</section>
 <section class="card">${intro()}</section></div>`,
@@ -154,6 +156,9 @@ footer{max-width:64rem;margin:2rem auto;font-size:.85rem;border-top:1px solid va
 /* The Dossier */
 .d-dossier .cover{background:#d9c49a;color:var(--ink);padding:3rem 1rem;text-align:center;border-radius:4px}
 .d-dossier .cover a{color:var(--ink)}
+.withheld{display:grid;gap:.3rem;margin:1rem 0;font-size:.95rem}.withheld div{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+.withheld dt{min-width:6.5rem;font-weight:600}.withheld dd{margin:0;display:flex;gap:.5rem;align-items:center}
+.bar{display:inline-block;width:8rem;height:.95em;background:var(--fg);border-radius:1px}.w{font-size:.85rem;font-style:italic}
 .stencil{font-size:2.4rem;letter-spacing:.2em;text-transform:uppercase;margin:0}
 .cards{display:grid;gap:1.2rem;margin-top:1.5rem}.card{background:var(--bg);border:1px solid var(--line);border-top:6px solid var(--amber);padding:1rem 1.2rem;border-radius:4px}
 /* The Scorecard */
@@ -173,7 +178,7 @@ for (const [p, n] of DESIGNS) {
   writeFileSync(join(dir, 'index.html'), page(p, n, bodies[n](), cls));
 }
 {
-  const blurbs = { 'The Brief': 'A confidential one-page brief. Prints to one page.', 'The Beacon': 'Dark, with the beacon at the centre.', 'The Dossier': 'A plain folder of index cards.', 'The Scorecard': 'Capabilities, outcomes and a fit checklist.', 'The Letter': 'The same profile, set as a letter.' };
+  const blurbs = { 'The Brief': 'A confidential one-page brief. Prints to one page.', 'The Beacon': 'Dark, with the beacon at the centre.', 'The Dossier': 'A plain folder of index cards, with what is withheld blacked out.', 'The Scorecard': 'Capabilities, outcomes and a fit checklist.', 'The Letter': 'The same profile, set as a letter.' };
   const list = DESIGNS.map(([p, n]) => `<li><h2><a href="../${p}">${n}</a></h2><p>${blurbs[n]}</p></li>`).join('');
   writeFileSync(join(OUT, 'designs/index.html'), page('designs/', 'All designs', `<p class="wordmark">${C.code}</p><h1>The five designs</h1><p>The same profile, in five designs. Every design carries the same words.</p><ul class="designs-list">${list}</ul>`, 'd-index'));
 }

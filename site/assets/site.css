@@ -35,6 +35,9 @@ footer{max-width:64rem;margin:2rem auto;font-size:.85rem;border-top:1px solid va
 /* The Dossier */
 .d-dossier .cover{background:#d9c49a;color:var(--ink);padding:3rem 1rem;text-align:center;border-radius:4px}
 .d-dossier .cover a{color:var(--ink)}
+.withheld{display:grid;gap:.3rem;margin:1rem 0;font-size:.95rem}.withheld div{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+.withheld dt{min-width:6.5rem;font-weight:600}.withheld dd{margin:0;display:flex;gap:.5rem;align-items:center}
+.bar{display:inline-block;width:8rem;height:.95em;background:var(--fg);border-radius:1px}.w{font-size:.85rem;font-style:italic}
 .stencil{font-size:2.4rem;letter-spacing:.2em;text-transform:uppercase;margin:0}
 .cards{display:grid;gap:1.2rem;margin-top:1.5rem}.card{background:var(--bg);border:1px solid var(--line);border-top:6px solid var(--amber);padding:1rem 1.2rem;border-radius:4px}
 /* The Scorecard */
