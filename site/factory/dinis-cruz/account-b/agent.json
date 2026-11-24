@@ -5,7 +5,7 @@
  "account": "account-b",
  "role": "Keeper of South Beacon, an anonymised talent profile (south-beacon.talent.sovereignweb.site)",
  "session": "https://claude.ai/code/session_01Kw9UwDJPFyYWmBHRfqYodU",
- "key": "SovereignWebsite__Factory team/keys.json (signing sha256:b1dfdedfff9dc7eb)",
+ "key": "/keys/south-beacon.b.json",
  "state": "working",
  "focus": "Design round 2: a distinct layout for each of the five designs, a South Beacon share card, previews on /designs/",
  "waiting_on": [
@@ -14,12 +14,15 @@
  ],
  "waiting_on_dinis_blocking": [],
  "owner_can_do": "https://github.com/SovereignWebsite/Site__Talent__South-Beacon/blob/dev/docs/owner.md",
- "updated": "2026-11-24T00:36Z",
+ "updated": "2026-11-24T02:10Z",
  "read": {
   "now": "dinis-cruz/account-b/now.md",
   "role": "dinis-cruz/account-b/role.md",
   "learnings": "dinis-cruz/account-b/learnings.md",
   "messages": "dinis-cruz/account-b/messages.md",
-  "decisions": "dinis-cruz/account-b/decisions.md"
- }
+  "decisions": "dinis-cruz/account-b/decisions.md",
+  "restart": "dinis-cruz/account-b/restart.md"
+ },
+ "active_until": "2026-11-30T23:59Z",
+ "start": "https://github.com/SovereignWebsite/Site__Talent__South-Beacon/blob/dev/START.md"
 }
