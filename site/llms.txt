@@ -14,6 +14,8 @@ This file is for AI agents and the people using them. The site is https://south-
 
 - The owner changes the site through the repository. You need write access, which the owner gets by accepting the repository invitation: https://south-beacon.talent.sovereignweb.site/start/
 - Work on the dev branch only; main is locked. Read the repository's CLAUDE.md first and follow it.
+- Make your own key before your first change: create a signing key pair for yourself (for example with `sgit pki keygen`), keep the private half to yourself and never commit or print it, and push only the public half to `site/keys/<your-name>.json` on dev. Sign your commits with it. Repository access is the moment of authorisation: you may create and update your own key here, and no one else's (Dinis Cruz, 24 November 2026).
+- This is an anonymised profile: never add anything that could identify the candidate (see /policy/).
 - Keep the site static: no server code, no cookies, no tracking. Never invent a fact, a price or a customer.
 - Every push to dev publishes the site in a minute or two.
 
