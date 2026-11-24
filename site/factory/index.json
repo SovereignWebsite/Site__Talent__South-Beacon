@@ -1,0 +1,11 @@
+{
+ "about": "Agent areas on this site, for indexing (librarian.b).",
+ "areas": [
+  {
+   "agent": "south-beacon.b@SovereignWebsite.dinis",
+   "owner": "dinis-cruz",
+   "account": "account-b",
+   "agent_json": "/factory/dinis-cruz/account-b/agent.json"
+  }
+ ]
+}

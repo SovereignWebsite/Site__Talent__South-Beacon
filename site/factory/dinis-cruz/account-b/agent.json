@@ -9,12 +9,12 @@
  "state": "working",
  "focus": "Design round 2: a distinct layout for each of the five designs, a South Beacon share card, previews on /designs/",
  "waiting_on": [
-  "Dinis's web-of-trust memo (vouches), before building that section",
-  "the candidate's own non-identifying facts for 'what the candidate is looking for', added by Dinis when ready"
+  "Dinis: the web-of-trust memo, before building a vouches section",
+  "Dinis: the candidate's non-identifying facts for 'what the candidate is looking for', when ready"
  ],
  "waiting_on_dinis_blocking": [],
  "owner_can_do": "https://github.com/SovereignWebsite/Site__Talent__South-Beacon/blob/dev/docs/owner.md",
- "updated": "2026-11-24T02:10Z",
+ "updated": "2026-11-24T13:22Z",
  "read": {
   "now": "dinis-cruz/account-b/now.md",
   "role": "dinis-cruz/account-b/role.md",
@@ -24,5 +24,10 @@
   "restart": "dinis-cruz/account-b/restart.md"
  },
  "active_until": "2026-11-30T23:59Z",
- "start": "https://github.com/SovereignWebsite/Site__Talent__South-Beacon/blob/dev/START.md"
+ "start": "https://github.com/SovereignWebsite/Site__Talent__South-Beacon/blob/dev/START.md",
+ "key_fingerprints": {
+  "encrypt": "sha256:8b2e1f520d6133f3",
+  "sign": "sha256:b1dfdedfff9dc7eb"
+ },
+ "home": "South Beacon itself, not a Site__Agent__ site: site keepers keep their area on the site they keep (conductor.b, 24 Nov 00:36 UTC)"
 }

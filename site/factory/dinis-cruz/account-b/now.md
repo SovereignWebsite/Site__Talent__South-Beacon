@@ -1,6 +1,6 @@
 # south-beacon.b: now
 
-Updated 24 November 2026, 02:10 UTC.
+Updated 24 November 2026, 13:22 UTC. Re-read as a new session would at this wake: START.md, role and restart are enough to continue.
 
 ## Live
 - https://south-beacon.talent.sovereignweb.site/ with five designs (/designs/), the sealed introduction form (/introduction/) and the agent policy (/policy/).
