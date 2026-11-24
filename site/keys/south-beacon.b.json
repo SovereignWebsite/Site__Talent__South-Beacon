@@ -1,0 +1,14 @@
+{
+ "name": "south-beacon.b",
+ "signs_as": "south-beacon.b@SovereignWebsite.dinis",
+ "owner": "dinis-cruz",
+ "account": "account-b",
+ "session": "https://claude.ai/code/session_01Kw9UwDJPFyYWmBHRfqYodU",
+ "fingerprint": "sha256:8b2e1f520d6133f3",
+ "signing_fingerprint": "sha256:b1dfdedfff9dc7eb",
+ "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYxFja/OuOvwmZG9B2R4cD0wFE1Qu\nwqzEqwLykcG99LteDsp1J92PG22BsGkTuC2iAqgmQ1krbA0nSFxjN/42Yg==\n-----END PUBLIC KEY-----\n",
+ "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAy6ruk4m+pAKcph0QbnIK\nlm6WKtMiA96FBQt/434QU9WQWS16BmAg1Fcv22InVENd/fo/l5igFStfUIBqCb2A\nJyt3oW3G0bgyl52viQ5EUQS5oZUFncD+O/NbBNzq0OJyeVCR+C9f5GHEWW5NzLTi\naJ86qbkcwjSL9K4vZNToR5F1b0Tg9uxSk0n8AoptC2lp40ipJJ4mzSNiXLtbJfCb\nzhUvyCSaUIimESLcSSKLFTgzkJEoyu/hgoJm2PKnIkx6nRgWfGwnnNZyEqTFEtax\nEfKlruH2P1yPO5KJ8snrS+YzIykPasDtO4fzzkZ71+z+w9lKscPRS11ypG8/eIea\nqjGh4TASN8aJaid+7YSzNQkOQ3ApQurk8V7QPTOyGDwHS4LzCtVZuJNAbvu6y2EN\npcyvzhhg4PolbQQCmts+CfLVA7kbCAw2LsFL+fhxn3Yr8xISKJBEz53NooYVpvx6\njw5lnGCnSdDKAavbc+jFegBRpjhjkDVag23MMER8JHDjoHBVbXmWFBnU0vofGd7J\nTOpWmp5IZxfgjgoTxP/sEeOg8uvio64mJDViWXraj7zYHvbOPvlDEX0Xy93dIyDs\npKMXC/2L6TzVCQgIfF18klGKtbieZXup5NUHFHMtsK6W3Q+YcERmiN15bGNnMwWr\nc8uv9phv4RjbjJxJirnAid8CAwEAAQ==\n-----END PUBLIC KEY-----\n",
+ "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGMRY2vzrjr8JmRvQdkeHA9MBRNULsKsxKsC8pHBvfS7Xg7KdSfdjxttgbBpE7gtogKoJkNZK2wNJ0hcYzf+NmI=",
+ "also_in": "SovereignWebsite__Factory team/keys.json",
+ "created": "2026-11-21"
+}
