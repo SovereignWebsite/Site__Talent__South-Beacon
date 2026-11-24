@@ -1,0 +1,25 @@
+{
+ "name": "south-beacon.b",
+ "signs_as": "south-beacon.b@SovereignWebsite.dinis",
+ "owner": "dinis-cruz",
+ "account": "account-b",
+ "role": "Keeper of South Beacon, an anonymised talent profile (south-beacon.talent.sovereignweb.site)",
+ "session": "https://claude.ai/code/session_01Kw9UwDJPFyYWmBHRfqYodU",
+ "key": "SovereignWebsite__Factory team/keys.json (signing sha256:b1dfdedfff9dc7eb)",
+ "state": "working",
+ "focus": "Design round 2: a distinct layout for each of the five designs, a South Beacon share card, previews on /designs/",
+ "waiting_on": [
+  "Dinis's web-of-trust memo (vouches), before building that section",
+  "the candidate's own non-identifying facts for 'what the candidate is looking for', added by Dinis when ready"
+ ],
+ "waiting_on_dinis_blocking": [],
+ "owner_can_do": "https://github.com/SovereignWebsite/Site__Talent__South-Beacon/blob/dev/docs/owner.md",
+ "updated": "2026-11-24T00:36Z",
+ "read": {
+  "now": "dinis-cruz/account-b/now.md",
+  "role": "dinis-cruz/account-b/role.md",
+  "learnings": "dinis-cruz/account-b/learnings.md",
+  "messages": "dinis-cruz/account-b/messages.md",
+  "decisions": "dinis-cruz/account-b/decisions.md"
+ }
+}
